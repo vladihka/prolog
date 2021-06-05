@@ -31,3 +31,10 @@ ojciec(X,Y):-
 matka(X,Y):-
     parant(X,Y),kobieta(X).
 
+% X jest siostra Y jezeli oni ma wspolecznego rodzica Z, oraz jezeli X jest kobieta 
+% i X nie jest rowny Y (czlowiek nie moze byc sam siebie siostre)
+siostra(X,Y):-
+    rodzic(Z,X),rodzic(Z,Y),kobieta(X), X\=Y.
+%dziala podobnie ak siostra
+braciszek(X,Y):-
+    rodzic(Z,X),rodzic(Z,Y),menczyszna(X), X\=Y.
