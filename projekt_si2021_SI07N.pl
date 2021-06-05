@@ -1,3 +1,5 @@
+%Hoishyk Siarhei, Vladyslav Bahlai , Vladyslav Semak
+
 % X jest rodzicem Y
 rodzic("Alexandr", "Olya").
 rodzic("Masha","Olya").
