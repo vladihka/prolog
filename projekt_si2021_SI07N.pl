@@ -41,6 +41,9 @@ braciszek(X,Y):-
 % X Jest bacia Y jezeli X jest matka Z, a Z jest matka Y 
 babcia(X,Y):-
     matka(X,Z),matka(Z,Y).
+% dziala podobnie jak babcia 
+dziadek(X,Y):-
+    ojciec(X,Z),ojciec(Z,Y).
 
 
 
