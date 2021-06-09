@@ -31,7 +31,7 @@ ojciec(X,Y):-
 matka(X,Y):-
     rodzic(X,Y),kobieta(X).
 
-% X jest siostra Y jezeli oni ma wspolecznego rodzica Z, oraz jezeli X jest kobieta 
+% X jest siostra Y jezeli oni ma wspolecznego rodzica Z, oraz jezeli X jest kobieta
 % i X nie jest rowny Y (czlowiek nie moze byc sam siebie siostre)
 siostra(X,Y):-
     rodzic(Z,X),rodzic(Z,Y),kobieta(X), X\=Y.
@@ -45,5 +45,5 @@ babcia(X,Y):-
 dziadek(X,Y):-
     ojciec(X,Z),ojciec(Z,Y).
 
-
+asfasdas
 
